@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/bundz/node-bynder#readme",
   "dependencies": {
-    "oauth": "^0.9.15",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1"
+    "bluebird": "^3.5.0",
+    "oauth": "^0.9.15"
   }
 }
