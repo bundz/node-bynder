@@ -37,26 +37,47 @@ bynder.get.asset(id, version=0): It returns an object.
 bynder.get.assets(options): Options should be an object. There is a lot of parameters you can send to:
 
 **brandId** *(String)*: Brand id, can be retrieved using the Retrieve brands and subbrands call.
+
 **subBrandId** *(String)*: Sub-brand id, can be retrieved using the Retrieve brands and subbrands call.
+
 **categoryId** *(String)*: Category id, can be retrieved using the Retrieve categories call.
+
 **collectionId** *(String)*: Collection id, can be retrieved using the Retrieve collections call.
+
 **ids** *(String)*: Comma-separated list of asset ids. Will return a asset for each existing id.
+
 **propertyOptionId** *(String)*: Comma-separated list of (metaproperty) option ids, can be retrieved using the Retrieve metaproperties call.
+
 **tags** *(String)*: Comma-separated list of tags, can be retrieved using the Retrieve tags call.
+
 **type** *(String)*: Comma-separated list of asset types.
+
 **orientation** *(String)*: Asset orientation.
+
 **property_METAPROPERTY_NAME** *(String)*: Metaproperty option name.
+
 **keyVisual** *(Bool)*: Indicates whether or not the return should only contain assets marked as "limited usage".
+
 **keyword** *(String)*: Search on filenames, tags, extensions, collection names, guidelines, brandstore, campaigns in workflow, enriched PDFs, word documents.
+
 **dateCreated** *(ISO8601 format String)*: Retrieve assets created after this date.
+
 **dateCreatedTo** *(ISO8601 format String)*: Set a date range together with the "dateCreated" parameter.
+
 **dateCreatedOn** *(ISO8601 format String)*: Retrieve assets created on this specific date.
+
 **dateModified** *(ISO8601 format String)*: Retrieve assets modified after this date.
+
 **dateModifiedTo** *(ISO8601 format String)*: Set a date range together with the "dateModified" parameter.
+
 **dateModifiedOn** *(ISO8601 format String)*: Retrieve assets modified on this specific date.
+
 **orderBy** *(String)*: Order of the returned list of assets.
+
 **limit** *(Number)*: Maximum number of results.
+
 **page** *(Number)*: Offset page for results: return the N-th set of limit-results.
+
 **count** *(Number)*: Indicating whether or not the return should include count results.
 
 ### Thank you
