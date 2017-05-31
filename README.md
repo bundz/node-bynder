@@ -5,10 +5,10 @@ Bynder sdk for nodejs.
 
 ```javascript
 var Bynder = require("node-bynder");
-var bynder = new Bynder({ consumer_key: "B4C71269-25B3-4978-A382C7EFC164D4AD",
-                          consumer_secret: "28f323cabfc5fbc56de35e3eacd43c4a",
-                          token: "BA3ECED2-7B76-44E1-B488BD58CE868692",
-                          token_secret: "e52f91f58123cca1882f2de15fd01e45"
+var bynder = new Bynder({ consumer_key: "12345678-1234-1234-1234567890123456",
+                          consumer_secret: "0000000000000000000",
+                          token: "12345678-1234-1234-1234567890123456",
+                          token_secret: "aaaaa23232312312312asd"
                         }, "http://yourbynder.url");
 
 bynder.get.asset("86B09440-FB61-450F-AFA65FABF4F5D628", 1)
@@ -36,27 +36,27 @@ bynder.get.asset(id, version=0): It returns an object.
 
 bynder.get.assets(options): Options should be an object. There is a lot of parameters you can send to:
 
-    brandId (String): Brand id, can be retrieved using the Retrieve brands and subbrands call.
-    subBrandId (String): Sub-brand id, can be retrieved using the Retrieve brands and subbrands call.
-    categoryId (String): Category id, can be retrieved using the Retrieve categories call.
-    collectionId (String): Collection id, can be retrieved using the Retrieve collections call.
-    ids (String): Comma-separated list of asset ids. Will return a asset for each existing id.
-    propertyOptionId (String): Comma-separated list of (metaproperty) option ids, can be retrieved using the Retrieve metaproperties call.
-    tags (String): Comma-separated list of tags, can be retrieved using the Retrieve tags call.
-    type (String): Comma-separated list of asset types.
-    orientation (String): Asset orientation.
-    property_METAPROPERTY_NAME (String) : Metaproperty option name.
-    keyVisual (Bool): Indicates whether or not the return should only contain assets marked as "limited usage".
-    keyword (String): Search on filenames, tags, extensions, collection names, guidelines, brandstore, campaigns in workflow, enriched PDFs, word documents.
-    dateCreated (ISO8601 format String): Retrieve assets created after this date.
-    dateCreatedTo (ISO8601 format String): Set a date range together with the "dateCreated" parameter.
-    dateCreatedOn (ISO8601 format String): Retrieve assets created on this specific date.
-    dateModified (ISO8601 format String): Retrieve assets modified after this date.
-    dateModifiedTo (ISO8601 format String): Set a date range together with the "dateModified" parameter.
-    dateModifiedOn (ISO8601 format String): Retrieve assets modified on this specific date.
-    orderBy (String): Order of the returned list of assets.
-    limit (Number): Maximum number of results.
-    page (Number): Offset page for results: return the N-th set of limit-results.
-    count (Number): Indicating whether or not the return should include count results.
+    **brandId** *(String)*: Brand id, can be retrieved using the Retrieve brands and subbrands call.
+    **subBrandId** *(String)*: Sub-brand id, can be retrieved using the Retrieve brands and subbrands call.
+    **categoryId** *(String)*: Category id, can be retrieved using the Retrieve categories call.
+    **collectionId** *(String)*: Collection id, can be retrieved using the Retrieve collections call.
+    **ids** *(String)*: Comma-separated list of asset ids. Will return a asset for each existing id.
+    **propertyOptionId** *(String)*: Comma-separated list of (metaproperty) option ids, can be retrieved using the Retrieve metaproperties call.
+    **tags** *(String)*: Comma-separated list of tags, can be retrieved using the Retrieve tags call.
+    **type** *(String)*: Comma-separated list of asset types.
+    **orientation** *(String)*: Asset orientation.
+    **property_METAPROPERTY_NAME** *(String)*: Metaproperty option name.
+    **keyVisual** *(Bool)*: Indicates whether or not the return should only contain assets marked as "limited usage".
+    **keyword** *(String)*: Search on filenames, tags, extensions, collection names, guidelines, brandstore, campaigns in workflow, enriched PDFs, word documents.
+    **dateCreated** *(ISO8601 format String)*: Retrieve assets created after this date.
+    **dateCreatedTo** *(ISO8601 format String)*: Set a date range together with the "dateCreated" parameter.
+    **dateCreatedOn** *(ISO8601 format String)*: Retrieve assets created on this specific date.
+    **dateModified** *(ISO8601 format String)*: Retrieve assets modified after this date.
+    **dateModifiedTo** *(ISO8601 format String)*: Set a date range together with the "dateModified" parameter.
+    **dateModifiedOn** *(ISO8601 format String)*: Retrieve assets modified on this specific date.
+    **orderBy** *(String)*: Order of the returned list of assets.
+    **limit** *(Number)*: Maximum number of results.
+    **page** *(Number)*: Offset page for results: return the N-th set of limit-results.
+    **count** *(Number)*: Indicating whether or not the return should include count results.
 
-    ### Thank you
+### Thank you
