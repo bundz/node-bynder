@@ -1,0 +1,27 @@
+{
+  "name": "node-bynder",
+  "version": "1.0.0",
+  "description": "Bynder sdk for nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bundz/node-bynder.git"
+  },
+  "keywords": [
+    "bynder"
+  ],
+  "author": "Vitor Alano de Ataides",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bundz/node-bynder/issues"
+  },
+  "homepage": "https://github.com/bundz/node-bynder#readme",
+  "dependencies": {
+    "oauth": "^0.9.15",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
