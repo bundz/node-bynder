@@ -30,9 +30,13 @@ D8C55D60ADDC3.jpg","thul":"https://d3cy9zhslanhfa.cloudfront.net/media/592A4778-
 
 ## Which methods are available?
 
-I am still working in this project, so right now we have two methods:
+I am still working in this project, so right now we have four methods:
+
+### Get asset by id
 
 bynder.get.asset(id, version=0): It returns an object.
+
+### Get assets by options
 
 bynder.get.assets(options): Options should be an object. There is a lot of parameters you can send to:
 
@@ -79,5 +83,12 @@ bynder.get.assets(options): Options should be an object. There is a lot of param
 **page** *(Number)*: Offset page for results: return the N-th set of limit-results.
 
 **count** *(Number)*: Indicating whether or not the return should include count results.
+
+### Download asset by id
+bynder.download.asset(id): It should return an object with "s3_file" attribute which is the url to file.
+
+### Download asset by id and version
+
+bynder.download.assetVersion(id, version): It should return an object with "s3_file" attribute which is the url to file.
 
 ### Thank you
