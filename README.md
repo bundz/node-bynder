@@ -30,7 +30,7 @@ D8C55D60ADDC3.jpg","thul":"https://d3cy9zhslanhfa.cloudfront.net/media/592A4778-
 
 ## Which methods are available?
 
-I am still working in this project, so right now we have four methods:
+I am still working in this project, so right now we have six methods:
 
 ### Get asset by id
 
@@ -85,10 +85,38 @@ bynder.get.assets(options): Options should be an object. There is a lot of param
 **count** *(Number)*: Indicating whether or not the return should include count results.
 
 ### Download asset by id
+
 bynder.download.asset(id): It should return an object with "s3_file" attribute which is the url to file.
 
 ### Download asset by id and version
 
 bynder.download.assetVersion(id, version): It should return an object with "s3_file" attribute which is the url to file.
+
+### Get tags by options
+
+bynder.get.tags(options): It shouuld return an array of tags. Options can contains 4 attributes.
+
+**limit** *(Number)*: Maximum number of results.
+
+**page** *(Number)*: Offset page for results: return the N-th set of limit-results.
+
+**orderBy** *(String)*: Desired order of returned tags set. Possible values: tag asc , tag desc , mediaCount asc , mediaCount desc. 
+
+**keyword** *(String)*: Search on matching names.
+
+### Get collection by options
+
+bynder.get.collections(options): It should return an array of collections. Options can contains 5 attributes.
+
+**limit** *(Number)*: Maximum number of results.
+
+**page** *(Number)*: Offset page for results: return the N-th set of limit-results.
+
+**orderBy** *(String)*: Desired order of returned tags set. Possible values: tag asc , tag desc , mediaCount asc , mediaCount desc. 
+
+**keyword** *(String)*: Search on matching names.
+
+**count** *(Boolean)*: Indicates whether or not the response should include count results.
+Boolean
 
 ### Thank you
