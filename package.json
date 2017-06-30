@@ -21,6 +21,8 @@
   "homepage": "https://github.com/bundz/node-bynder#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "oauth": "^0.9.15"
+    "oauth": "^0.9.15",
+    "request": "^2.81.0",
+    "xml2js": "^0.4.17"
   }
 }
