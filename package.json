@@ -1,6 +1,6 @@
 {
   "name": "node-bynder",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Bynder sdk for nodejs.",
   "main": "index.js",
   "scripts": {
